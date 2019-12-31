@@ -9,7 +9,12 @@ def import_word_list():
     """import word list from .txt file"""
     print("Importing word list")
     # code here
+    f = open('word_list.txt', 'r')
+    word_list = f.readlines()
+    f.close()
     print("Import complete")
+    return word_list
     
 # main program starts here
-    import_word_list()
+    
+word_list = import_word_list()
