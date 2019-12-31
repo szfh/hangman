@@ -19,13 +19,23 @@ def import_word_list():
 def select_word(word_list):
     """select a random word from the list"""
     n = randint(0,99)
-    return word_list[n].strip()
+    return word_list[3].strip()
 
 # main program starts here
     
 word_list = import_word_list()
 selected_word = select_word(word_list)
 word_length = len(selected_word)
-print(selected_word)
 
-#python strings https://www.w3schools.com/python/python_strings.asp
+# python strings https://www.w3schools.com/python/python_strings.asp
+
+# next: display letters as asterisks
+# then: prompt for first guess
+
+unsolved_word = "*" * word_length
+all_guesses = []
+
+for n in range(7):
+    print("the current word is: ", unsolved_word)
+    guess = input("Please enter your next guess: ")
+    all_guesses.append(guess) 
