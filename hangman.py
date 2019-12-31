@@ -35,7 +35,9 @@ word_length = len(selected_word)
 unsolved_word = "*" * word_length
 all_guesses = []
 
-for n in range(7):
+n = 0
+while n < 3:
     print("the current word is: ", unsolved_word)
     guess = input("Please enter your next guess: ")
-    all_guesses.append(guess) 
+    all_guesses.append(guess)
+    n += 1
