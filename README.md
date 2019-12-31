@@ -1,11 +1,11 @@
-# Hangman
+# Hangman :snake:
 
 ## Plan
 
 
 1. Import list of words from ``word_list.txt`` :heavy_check_mark:
 1. Select random word from list :heavy_check_mark:
-1. Display letters as asterisks ``*******`` :ballot_box_with_check:
+1. Display letters as asterisks ``*******`` :arrow_forward:
 1. Prompt for guess
 	1. Correct: display letter with asterisks filled ``**a**a*``
 	1. Incorrect: remove life and display asterisks ``*******``
