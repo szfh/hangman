@@ -14,7 +14,12 @@ def import_word_list():
     f.close()
     print("Import complete")
     return word_list
-    
+
+def select_word(word_list):
+    # code here
+    return word_list[1]
+
 # main program starts here
     
 word_list = import_word_list()
+selected_word = select_word(word_list)
