@@ -2,8 +2,8 @@
 
 ## Plan
 
-1. Import list of words from ``word_list.txt``
-1. Select random word from list
+1. Import list of words from ``word_list.txt`` :tick:
+1. Select random word from list :tick:
 1. Display letters as asterisks ``*******``
 1. Prompt for guess
 	1. Correct: display letter with asterisks filled ``**a**a*``
