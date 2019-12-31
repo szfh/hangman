@@ -24,3 +24,15 @@ We require that the program you write does some things in a very specific way so
 Emailing code to us is no longer acceptable due to MoDNET restrictions, and this site doesn't allow python file upload. Instead, the code should be saved on this website: https://gist.github.com (you will have to create a free account), with the naming convention ``Surname_FirstName_Hangman.py`` as a ``Secret gist`` and then the link pasted into your ``Idea`` submission on this page. The mark-scheme is attached on the right-side of this page, and we expect completion of the project to take around 10-20 hours. The solution can easily found on google - PLEASE try to figure it out on your own - we run plagiarism checkers :wink:
 
 **Step 4** : Once completed, we will trawl the submissions once a month (first fortnight of the month), mark them, and get back to you with whether you have passed.
+
+## Plan
+
+1. Import list of words from ``word_list.txt``
+1. Select random word from list
+1. Display letters as asterisks ``*******``
+1. Prompt for guess
+	1. Correct: display letter with asterisks filled ``**a**a*``
+	1. Incorrect: remove life and display asterisks ``*******``
+1. Continue until
+	1. Win: word complete
+	1. Lose: 7 incorrect guesses
