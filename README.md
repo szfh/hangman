@@ -5,14 +5,20 @@
 
 1. Import list of words from ``word_list.txt`` :heavy_check_mark:
 1. Select random word from list :heavy_check_mark:
-1. Display letters as asterisks ``*******`` :heavy_check_mark:
+	1. Merge these two functions together :arrow_forward:
+1. Display current word status ``*******`` :heavy_check_mark:
 1. Prompt for guess :arrow_forward:
-	1. Check if correct input
-		1. Correct: display letter with asterisks filled ``**a**a*``
-		1. Incorrect: remove life and display asterisks ``*******``
-1. Continue until
+	1. Check if correct input :arrow_forward:
+		1. Correct guess: display letter with asterisks filled ``**a**a*`` :heavy_check_mark:
+		1. Incorrect guess: remove life and display asterisks ``*******`` :heavy_check_mark:
+1. Continue until :arrow_forward:
 	1. Win: word complete
 	1. Lose: 7 incorrect guesses
+1. Check mark scheme
+1. Tidy
+	1. Move into functions if possible
+	1. Error checking
+	1. Good code commenting
 
 ## Task
 
