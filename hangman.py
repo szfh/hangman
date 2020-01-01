@@ -54,6 +54,13 @@ def lose(lives):
     else:
         return False
 
+def life_lives(lives):
+    """give the singular or plural version of life/lives"""
+    if lives == 1:
+        return "life"
+    else:
+        return "lives"
+
 # main program
 word = select_word() # get word for puzzle
 word_length = len(word) # get word length
@@ -69,7 +76,7 @@ while True:
         break
     
     # print game status
-    print("You have %d lives remaining. The current word is: %s" %(lives, word_unsolved))
+    print("You have %d %s remaining. The current word is: %s" %(lives, life_lives(lives), word_unsolved))
     
     while True:
         guess = input("Please enter your next guess: ") # get next guess
