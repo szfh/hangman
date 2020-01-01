@@ -22,7 +22,7 @@ def select_word(word_list):
     return word_list[3].strip()
 
 # main program starts here
-    
+
 word_list = import_word_list()
 word = select_word(word_list)
 word_length = len(word)
@@ -37,9 +37,19 @@ all_guesses = []
 
 g = 0
 while g < 3:
-    print("the current word is: ", word_unsolved)
+    print("You have %s lives remaining. The current word is: %s" % ((3-g), word_unsolved))
     guess = input("Please enter your next guess: ")
+    # error check
     all_guesses.append(guess)
+    
+    if guess in word:
+        print("Correct")
+        # update word_unsolved
+    else:
+        print("Incorrect")
+        # take away a life
+    
+    
     
     #for l in word_length
     #if selected_word[l] in guess
