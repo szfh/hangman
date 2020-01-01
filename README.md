@@ -8,18 +8,17 @@
 	1. Merge these two functions together :arrow_forward:
 1. Display current word status ``*******`` :heavy_check_mark:
 1. Prompt for guess :heavy_check_mark:
-	1. Check if correct input :arrow_forward:
-		1. Correct guess: display letter with asterisks filled ``**a**a*`` :heavy_check_mark:
-		1. Incorrect guess: remove life and display asterisks ``*******`` :heavy_check_mark:
+	1. Correct guess: display letter with asterisks filled ``**a**a*`` :heavy_check_mark:
+	1. Incorrect guess: remove life and display asterisks ``*******`` :heavy_check_mark:
 1. Continue until :heavy_check_mark:
 	1. Win: word complete :heavy_check_mark:
 	1. Lose: 7 incorrect guesses :heavy_check_mark:
-1. Check mark scheme
-1. Tidy
-	1. Move into functions if possible
-	1. Error checking
-	1. Good code commenting
-	1. Life/lives in the game text
+1. Check mark scheme :arrow_forward:
+1. Tidy :arrow_forward:
+	1. Move into functions if possible :arrow_forward:
+	1. Error checking :arrow_forward:
+	1. Good code commenting :arrow_forward:
+	1. Life/lives in the game text :arrow_forward:
 
 ## Task
 
