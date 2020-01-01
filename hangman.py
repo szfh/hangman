@@ -5,16 +5,13 @@ Created on Tue Dec 31 18:18:28 2019
 @author: Sam
 """
 from random import randint
-from string import ascii_lowercase
+# from string import ascii_lowercase
 
 def import_word_list():
     """import word list from .txt file"""
-    print("Importing word list")
-    # code here
     f = open('word_list.txt', 'r')
     word_list = f.readlines()
     f.close()
-    print("Import complete")
     return word_list
 
 def select_word(word_list):
@@ -27,12 +24,6 @@ def select_word(word_list):
 word_list = import_word_list()
 word = select_word(word_list)
 word_length = len(word)
-
-# python strings https://www.w3schools.com/python/python_strings.asp
-
-# next: display letters as asterisks
-# then: prompt for first guess
-
 word_unsolved = "*" * word_length
 all_guesses = []
 lives = 3
@@ -71,25 +62,4 @@ elif lives == 0:
     print("You lose")
     
 else:
-    print("You broke the game!")
-
-    # victory
-    
-    # death
-    
-    # #for l in word_length
-    # #if selected_word[l] in guess
-    # #unsolved_word[l] = guess
-    
-# test
-# test_lives = 3
-# test_all_guesses = ["a","b","c"]
-# # test_not_guessed = ascii_lowercase - test_all_guesses
-# test_word = "sugar"
-# test_word_unsolved = "*" * 5
-
-# for l in range(5):
-#     print("letter = %s" %test_word[l])
-#     if test_word[l] == "a":
-#         print("l = %d" %l)
-    
+    print("You broke the game!")    
