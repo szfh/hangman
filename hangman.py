@@ -65,7 +65,6 @@ while True:
     
     if guess in word: # check if guess is correct
         print("Correct")
-        
     else:
         print("Incorrect")
         lives -= 1 # lose a life if guess is incorrect
