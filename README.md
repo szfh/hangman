@@ -7,11 +7,11 @@
 1. Select random word from list :heavy_check_mark:
 	1. Merge these two functions together :arrow_forward:
 1. Display current word status ``*******`` :heavy_check_mark:
-1. Prompt for guess :arrow_forward:
+1. Prompt for guess :heavy_check_mark:
 	1. Check if correct input :arrow_forward:
 		1. Correct guess: display letter with asterisks filled ``**a**a*`` :heavy_check_mark:
 		1. Incorrect guess: remove life and display asterisks ``*******`` :heavy_check_mark:
-1. Continue until :arrow_forward:
+1. Continue until :heavy_check_mark:
 	1. Win: word complete
 	1. Lose: 7 incorrect guesses
 1. Check mark scheme
