@@ -38,27 +38,6 @@ all_guesses = []
 lives = 3
 
 while lives > 0:
-    print("You have %d lives remaining. The current word is: %s" % (lives, word_unsolved))
-    guess = input("Please enter your next guess: ")
-    # error check - exactly 1 character, letter a-z
-    all_guesses.append(guess)
-    
-    if guess in word:
-        print("Correct")
-        # breakpoint()
-        # l=0
-        # for l in range(word_length):
-            # breakpoint()
-            # print(l)
-            # print(word[l])
-            # if word[l] in guess:
-#                 # breakpoint()
-#                 word_unsolved[l] = guess
-        
-    else:
-        print("Incorrect")
-#         # take away a life
-    
     # update word_unsolved
     word_unsolved = str()
     for i in range(word_length):
@@ -66,14 +45,26 @@ while lives > 0:
             word_unsolved = word_unsolved + word[i]
         else:
             word_unsolved = word_unsolved + "*"
+
+    print("You have %d lives remaining. The current word is: %s" % (lives, word_unsolved))
+    guess = input("Please enter your next guess: ")
+    # error check - exactly 1 character, letter a-z
+    all_guesses.append(guess)
     
+    if guess in word:
+        print("Correct")
+        
+    else:
+        print("Incorrect")
+        lives -= 1
+    
+    # victory
+    
+    # death
     
     # #for l in word_length
     # #if selected_word[l] in guess
     # #unsolved_word[l] = guess
-    
-    
-    lives -= 1 # only if incorrect guess
     
 # test
 # test_lives = 3
