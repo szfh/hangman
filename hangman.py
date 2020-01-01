@@ -37,7 +37,7 @@ all_guesses = []
 
 g = 0
 while g < 3:
-    print("You have %s lives remaining. The current word is: %s" % ((3-g), word_unsolved))
+    print("You have %d lives remaining. The current word is: %s" % ((3-g), word_unsolved))
     guess = input("Please enter your next guess: ")
     # error check
     all_guesses.append(guess)
