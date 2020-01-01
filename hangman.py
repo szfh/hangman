@@ -28,13 +28,13 @@ def game(word, all_guesses):
 def check_guess_valid(guess, all_guesses):
     """check that a guess is valid"""
     if not len(guess) == 1: # invalid if more or less than 1 character
-        print("enter 1 character")
+        print("Enter 1 character")
         return False
     elif not guess.islower(): # invalid if not lower case character
-        print("enter a lower case character")
+        print("Enter a lower case character")
         return False
     elif guess in all_guesses: # invalid if alredy guessed
-        print("you've tried that one already")
+        print("You've tried that one already")
         return False
     else:
         all_guesses.append(guess) # valid if none of above conditions matched
