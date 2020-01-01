@@ -26,6 +26,21 @@ def game(word, all_guesses):
             word_unsolved = word_unsolved + "*"
     return word_unsolved
 
+def check_guess_valid(guess, all_guesses):
+    """check that a guess is valid"""
+    if not len(guess) == 1:
+        print("enter 1 letter")
+        return False
+    elif not guess.islower():
+        print("enter a lower case letter")
+        return False
+    elif guess in all_guesses:
+        print("you've tried that one already")
+        return False
+    else:
+        all_guesses.append(guess)
+        return True
+
 # main program starts here
 word = select_word()
 word_length = len(word)
@@ -44,18 +59,10 @@ while True:
     
     while True:
         guess = input("Please enter your next guess: ")
-        if not len(guess) == 1:
-            print("enter 1 letter")
-            continue
-        elif not guess.islower():
-            print("enter a lower case letter")
-            continue
-        elif guess in all_guesses:
-            print("you've tried that one already")
-            continue
-        else:
-            all_guesses.append(guess)
+        if check_guess_valid(guess, all_guesses):
             break
+        else:
+            continue
     
     if guess in word:
         print("Correct")
