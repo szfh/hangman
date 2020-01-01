@@ -19,6 +19,7 @@
 	1. Move into functions if possible
 	1. Error checking
 	1. Good code commenting
+	1. Life/lives in the game text
 
 ## Task
 
