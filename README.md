@@ -5,7 +5,7 @@
 
 1. Import list of words from ``word_list.txt`` :heavy_check_mark:
 1. Select random word from list :heavy_check_mark:
-	1. Merge these two functions together :arrow_forward:
+	1. Merge these two functions together :heavy_check_mark:
 1. Display current word status ``*******`` :heavy_check_mark:
 1. Prompt for guess :heavy_check_mark:
 	1. Correct guess: display letter with asterisks filled ``**a**a*`` :heavy_check_mark:
@@ -13,10 +13,10 @@
 1. Continue until :heavy_check_mark:
 	1. Win: word complete :heavy_check_mark:
 	1. Lose: 7 incorrect guesses :heavy_check_mark:
-1. Check mark scheme :arrow_forward:
+1. Check mark scheme :heavy_check_mark:
 1. Tidy :arrow_forward:
-	1. Move into functions if possible :arrow_forward:
-	1. Error checking :arrow_forward:
+	1. Move into functions where possible :arrow_forward:
+	1. Error checking :heavy_check_mark:
 	1. Good code commenting :arrow_forward:
 	1. Life/lives in the game text :arrow_forward:
 
