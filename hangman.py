@@ -4,6 +4,7 @@
 """
 from random import randint
 
+# functions
 def select_word():
     """import word_list.txt, then return a random word"""
     f = open("./word_list.txt", "r") # read in all words from file
@@ -53,7 +54,7 @@ def lose(lives):
     else:
         return False
 
-# main program starts here
+# main program
 word = select_word() # get word for puzzle
 word_length = len(word) # get word length
 all_guesses = [] # empty list of guesses
