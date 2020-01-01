@@ -10,7 +10,7 @@ def select_word():
     word_list = f.readlines()
     f.close()
     
-    n = randint(0,99) # select a random word
+    n = randint(0,len(word_list)-1) # select a random word
     word = word_list[n].strip() # remove white space
     return word
 
