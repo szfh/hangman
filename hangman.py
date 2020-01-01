@@ -42,9 +42,17 @@ while True:
         break
     
     print("You have %d lives remaining. The current word is: %s" %(lives, word_unsolved))
-    guess = input("Please enter your next guess: ")
-    # error check - exactly 1 character, letter a-z
-    all_guesses.append(guess)
+    
+    while True:
+        guess = input("Please enter your next guess: ")
+        if not len(guess) == 1:
+            print("enter 1 letter")
+            continue
+        elif not guess.islower():
+            print("enter a lower case letter")
+        else:
+            all_guesses.append(guess)
+            break
     
     if guess in word:
         print("Correct")
