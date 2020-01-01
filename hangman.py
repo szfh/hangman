@@ -7,22 +7,18 @@ Created on Tue Dec 31 18:18:28 2019
 from random import randint
 # from string import ascii_lowercase
 
-def import_word_list():
-    """import word list from .txt file"""
+def select_word():
+    """import word_list.txt, then return a random word"""
     f = open('word_list.txt', 'r')
     word_list = f.readlines()
     f.close()
-    return word_list
-
-def select_word(word_list):
-    """select a random word from the list"""
+    
     n = randint(0,99)
-    return word_list[3].strip()
+    word = word_list[3].strip()
+    return word
 
 # main program starts here
-
-word_list = import_word_list()
-word = select_word(word_list)
+word = select_word()
 word_length = len(word)
 word_unsolved = "*" * word_length
 all_guesses = []
