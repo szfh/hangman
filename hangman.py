@@ -17,6 +17,7 @@ def select_word():
     return word
 
 def game(word, all_guesses):
+    """get the current game status"""
     word_unsolved = str()
     for i in range(word_length):
         if word[i] in all_guesses:
