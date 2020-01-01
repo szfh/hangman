@@ -17,12 +17,6 @@ def select_word():
     word = word_list[3].strip()
     return word
 
-def correct_guess(word, guess):
-    if guess in word:
-        return True
-    else:
-        return False
-
 # main program starts here
 word = select_word()
 word_length = len(word)
@@ -50,7 +44,7 @@ while True:
     # error check - exactly 1 character, letter a-z
     all_guesses.append(guess)
     
-    if correct_guess(word, guess):
+    if guess in word:
         print("Correct")
         
     else:
