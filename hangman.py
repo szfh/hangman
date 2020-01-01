@@ -48,7 +48,8 @@ while True:
     
     if word_unsolved == word:
         break
-    elif lives == 0:
+    
+    if lives == 0:
         break
     
     print("You have %d lives remaining. The current word is: %s" % (lives, word_unsolved))
@@ -64,10 +65,10 @@ while True:
         lives -= 1
 
 if word_unsolved == word:
-    print("Victory!")
+    print("Congratulations you win")
     
 elif lives == 0:
-    print("Defeat!")
+    print("You lose")
     
 else:
     print("You broke the game!")
