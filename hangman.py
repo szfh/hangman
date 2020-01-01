@@ -2,7 +2,7 @@
 """
 @author: Samuel
 """
-from random import randint
+from random import randrange
 
 # functions
 def select_word():
@@ -11,7 +11,7 @@ def select_word():
     word_list = f.readlines()
     f.close()
     
-    n = randint(0,len(word_list)-1) # select a random word
+    n = randrange(len(word_list)) # select a random word
     word = word_list[n].strip() # remove white space
     return word
 
