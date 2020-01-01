@@ -39,6 +39,20 @@ def check_guess_valid(guess, all_guesses):
         all_guesses.append(guess) # valid if none of above conditions matched
         return True
 
+def win(word, word_unsolved):
+    """check if the game has been won"""
+    if word_unsolved == word:
+        return True
+    else:
+        return False
+
+def lose(lives):
+    """check if the game has been lost"""
+    if lives == 0:
+        return True
+    else:
+        return False
+
 # main program starts here
 word = select_word() # get word for puzzle
 word_length = len(word) # get word length
@@ -47,10 +61,10 @@ lives = 7 # starting number of lives
 
 while True:
     word_unsolved = game(word, all_guesses)
-    if word_unsolved == word: # end game if all letters guessed
+    if win(word, word_unsolved): # end game if all letters guessed
         break
     
-    if lives == 0: # end game if all lives lost
+    if lose(lives): # end game if all lives lost
         break
     
     # print game status
@@ -69,9 +83,9 @@ while True:
         print("Incorrect")
         lives -= 1 # lose a life if guess is incorrect
 
-if word_unsolved == word: # end game
+if  win(word, word_unsolved): # end game
     print("Congratulations you win")
-elif lives == 0:
+elif lose(lives):
     print("You lose")
 else:
     print("You broke the game!")    
