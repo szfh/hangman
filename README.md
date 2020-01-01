@@ -12,8 +12,8 @@
 		1. Correct guess: display letter with asterisks filled ``**a**a*`` :heavy_check_mark:
 		1. Incorrect guess: remove life and display asterisks ``*******`` :heavy_check_mark:
 1. Continue until :heavy_check_mark:
-	1. Win: word complete
-	1. Lose: 7 incorrect guesses
+	1. Win: word complete :heavy_check_mark:
+	1. Lose: 7 incorrect guesses :heavy_check_mark:
 1. Check mark scheme
 1. Tidy
 	1. Move into functions if possible
