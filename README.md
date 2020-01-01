@@ -15,9 +15,9 @@
 	1. Lose: 7 incorrect guesses :heavy_check_mark:
 1. Check mark scheme :heavy_check_mark:
 1. Tidy :arrow_forward:
-	1. Move into functions where possible :arrow_forward:
+	1. Move into functions where possible :heavy_check_mark:
 	1. Error checking :heavy_check_mark:
-	1. Good code commenting :arrow_forward:
+	1. Good code commenting :heavy_check_mark:
 	1. Life/lives in the game text :arrow_forward:
 
 ## Task
