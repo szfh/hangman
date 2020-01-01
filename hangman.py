@@ -49,6 +49,10 @@ while True:
             continue
         elif not guess.islower():
             print("enter a lower case letter")
+            continue
+        elif guess in all_guesses:
+            print("you've tried that one already")
+            continue
         else:
             all_guesses.append(guess)
             break
