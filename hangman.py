@@ -35,9 +35,9 @@ word_length = len(word)
 word_unsolved = "*" * word_length
 all_guesses = []
 
-g = 0
-while g < 3:
-    print("You have %d lives remaining. The current word is: %s" % ((3-g), word_unsolved))
+lives = 3
+while lives > 0:
+    print("You have %d lives remaining. The current word is: %s" % (lives, word_unsolved))
     guess = input("Please enter your next guess: ")
     # error check
     all_guesses.append(guess)
@@ -45,6 +45,14 @@ while g < 3:
     if guess in word:
         print("Correct")
         # update word_unsolved
+        # breakpoint()
+        l=0
+        # for l in word_length:
+            # breakpoint()
+            # if word[l] in guess:
+                # breakpoint()
+                # word_unsolved[l] = guess
+        
     else:
         print("Incorrect")
         # take away a life
@@ -56,4 +64,4 @@ while g < 3:
     #unsolved_word[l] = guess
     
     
-    g += 1 # only if incorrect guess
+    lives -= 1 # only if incorrect guess
