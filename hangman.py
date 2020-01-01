@@ -17,29 +17,31 @@ def select_word():
     word = word_list[3].strip()
     return word
 
-# main program starts here
-word = select_word()
-word_length = len(word)
-word_unsolved = "*" * word_length
-all_guesses = []
-lives = 3
-
-while True:
-    # update word_unsolved
+def game(word, all_guesses):
     word_unsolved = str()
     for i in range(word_length):
         if word[i] in all_guesses:
             word_unsolved = word_unsolved + word[i]
         else:
             word_unsolved = word_unsolved + "*"
-    
+    return word_unsolved
+
+# main program starts here
+word = select_word()
+word_length = len(word)
+# word_unsolved = "*" * word_length
+all_guesses = []
+lives = 3
+
+while True:
+    word_unsolved = game(word, all_guesses)
     if word_unsolved == word:
         break
     
     if lives == 0:
         break
     
-    print("You have %d lives remaining. The current word is: %s" % (lives, word_unsolved))
+    print("You have %d lives remaining. The current word is: %s" %(lives, word_unsolved))
     guess = input("Please enter your next guess: ")
     # error check - exactly 1 character, letter a-z
     all_guesses.append(guess)
