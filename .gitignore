@@ -1,4 +1,5 @@
-.spyproject
+.spyproject/
+.idea/
 
 word_list.txt
 Plagiarism declaration.docx
